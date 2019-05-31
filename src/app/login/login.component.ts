@@ -14,26 +14,26 @@ export class LoginComponent implements OnInit {
   showBackButton = false;
   loading = false;
   login = {
-      username: 'test',
-      password: '123456'
+    username: 'test',
+    password: '123456'
   };
 
   constructor(public nav: NavController,
-           public router:Router,
-           private toastCtrl:ToastController,
-           public dataService:HttpServiceService
-            ) {
+    public router: Router,
+    private toastCtrl: ToastController,
+    public dataService: HttpServiceService
+  ) {
   }
 
   ngOnInit() {
-    
+
   }
   async toastTip(message: string) {
     const toast = await this.toastCtrl.create({
-        message: message,
-        duration: 2000,
-        position: 'middle'
-      });
+      message: message,
+      duration: 2000,
+      position: 'middle'
+    });
     toast.present();
   }
   formSubmit() {
@@ -45,19 +45,19 @@ export class LoginComponent implements OnInit {
       this.toastTip('请填写密码');
       return;
     }
-    let loginbean=LoginBean.getLoginIn();
-    loginbean.userName=this.login.username;
-    loginbean.password=this.login.password;
+    let loginbean = LoginBean.getLoginIn();
+    loginbean.userName = this.login.username;
+    loginbean.password = this.login.password;
     // this.dataService.login(this.login.username,this.login.password).subscribe(res=>{
 
     // })
-     this.router.navigate(['home'])
-     //设置home为跟目录
+    this.router.navigate(['home'])
+    //设置home为跟目录
     // this.nav.navigateRoot(['home']);
   }
 
   findPassword() {
-     
+
   }
 
 }
