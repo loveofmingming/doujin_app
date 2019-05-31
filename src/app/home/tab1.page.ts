@@ -23,6 +23,7 @@ export class Tab1Page {
   subjectQuery() {
     this.router.navigate(['query'])
   }
+  //扫一扫
   scan() {
     this.barcodeScanner.scan().then(barcodeData => {
       alert('Barcode data: '+JSON.stringify(barcodeData));
