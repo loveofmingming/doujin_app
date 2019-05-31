@@ -1,5 +1,7 @@
 {
   "name": "OneIonic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

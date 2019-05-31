@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { LoginBean } from './../login/login-bean';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  userInfo:LoginBean;
+  constructor() {
+     this.userInfo=LoginBean.getLoginIn();
+  }
+
 
 }

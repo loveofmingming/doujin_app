@@ -1,0 +1,8 @@
+<ion-content>
+  <form class="seller_form clear">
+    <ion-input clearInput type="text" placeholder="请输入企业名称" (keyup)="checkInput()"
+     [(ngModel)]="searchValue" name="search"></ion-input>
+    <ion-button size="small" color="primary" (click)="searchRestaurants()">搜索</ion-button>
+  </form>
+
+</ion-content>
