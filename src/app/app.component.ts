@@ -30,7 +30,7 @@ export class AppComponent {
     });
   }
 
-
+//退出应用
   lastTimeBackPress = 0;
   timePeriodToExit = 2000;
   backButtonEvent() {
