@@ -52,7 +52,8 @@ export class LoginComponent implements OnInit {
 
     // })
      this.router.navigate(['home'])
-          // this.nav.navigateRoot(['home']);
+     //设置home为跟目录
+    // this.nav.navigateRoot(['home']);
   }
 
   findPassword() {
