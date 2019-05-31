@@ -29,7 +29,6 @@ export class AppComponent {
     
     });
   }
-
 //android通过返回按钮退出应用
   lastTimeBackPress = 0;
   timePeriodToExit = 2000;
