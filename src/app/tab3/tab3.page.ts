@@ -14,7 +14,7 @@ export class Tab3Page {
   
   // image_url:string
   image_url = 'https://fuss10.elemecdn.com';
-
+//添加图片功能
   cameraOption(type:number){
     const options: CameraOptions = {
       quality: 100,
