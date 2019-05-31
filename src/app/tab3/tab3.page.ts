@@ -37,6 +37,7 @@ export class Tab3Page {
   // openAlbum(){
   //   this.cameraOption(this.camera.PictureSourceType.SAVEDPHOTOALBUM);
   // }
+  //提示选择框
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
       header: '添加图片',
